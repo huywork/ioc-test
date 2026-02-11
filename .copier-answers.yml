@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 4.5.0
+_src_path: https://github.com/epics-containers/ioc-template
+description: Huy's test generic ioc
+git_platform: github.com
+github_org: huywork
+name: ioc-test
+repo_uri: git@github.com:huywork/ioc-test.git
+rtems: false
