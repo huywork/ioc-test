@@ -39,6 +39,16 @@ RUN ansible.sh autosave
 COPY ioc ${SOURCE_FOLDER}/ioc
 RUN ansible.sh ioc
 
+# Huy added for lakeshore340
+COPY ibek-support/asyn/ asyn/
+RUN ansible.sh asyn
+
+COPY ibek-support/StreamDevice/ StreamDevice/
+RUN ansible.sh StreamDevice
+
+COPY ibek-support/lakeshore340/ lakeshore340/
+RUN ansible.sh lakeshore340
+
 ##### runtime preparation stage ################################################
 FROM developer AS runtime_prep
 
